@@ -129,8 +129,8 @@ linkedin_icon_url = "https://www.iconpacks.net/icons/1/free-linkedin-icon-112-th
 
 # HTML code with social links
 html_code = f'''
-    <a href="{github_repo_url}" target="_blank"><img src="{github_icon_url}" alt="GitHub" style="width:25px;height:25px;"></a>
-    <a href="{twitter_profile_url}" target="_blank"><img src="{twitter_icon_url}" alt="Twitter" style="width:25px;height:25px;"></a>
+    <a href="{github_repo_url} " target="_blank"><img src="{github_icon_url}" alt="GitHub" style="width:25px;height:25px;"></a>
+    <a href="{twitter_profile_url} " target="_blank"><img src="{twitter_icon_url}" alt="Twitter" style="width:21;height:21;"></a>
     <a href="{linkedin_profile_url}" target="_blank"><img src="{linkedin_icon_url}" alt="Twitter" style="width:25px;height:25px;"></a>
     '''
 
