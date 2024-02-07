@@ -36,6 +36,8 @@ def wrap_text(text, limit):
 openai.api_key = os.getenv('OPENAI_API_KEY') # local testing
 # openai.api_key = st.secrets['OPENAI_API_KEY']
 
+openai.api_key
+
 from openai import OpenAI
 client = OpenAI()
 
