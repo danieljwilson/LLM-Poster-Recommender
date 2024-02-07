@@ -6,8 +6,6 @@ import os
 import re
 from sklearn.manifold import TSNE
 from sklearn.decomposition import PCA
-from sklearn.metrics.pairwise import cosine_similarity
-import plotly.express as px
 
 #############
 # LOAD DATA #
