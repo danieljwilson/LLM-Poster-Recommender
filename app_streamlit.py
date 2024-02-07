@@ -117,6 +117,13 @@ st.sidebar.markdown('''
                     By [Daniel J Wilson](https://www.danieljwilson.com)
                     '''
         )
+# HTML code with an image of the GitHub icon linking to your repository
+github_repo_url = "https://github.com/danieljwilson/"
+github_icon_url = "https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" # This is an example URL; use an appropriate icon URL
+html_code = f'<a href="{github_repo_url}" target="_blank"><img src="{github_icon_url}" alt="GitHub" style="width:40px;height:40px;"></a>'
+
+# Display the GitHub icon with a link
+st.sidebar.markdown(html_code, unsafe_allow_html=True)
 
 ########
 # MAIN #
@@ -256,7 +263,7 @@ if plot_df is not None:
                 ---
                 The goal is to provide a (hopefully) handy glance at posters that may be in your wheelhouse.
                 
-                I also hope to publish a more polished version on Github which could be easily repurposed by any conference.
+                All code is published on a [Github repo](https://github.com/danieljwilson/LLM-Poster-Recommender), and should be easy to repurpose for any conference.
                 
                 🐛 This is a very beta version so expect glitches.
                 
