@@ -120,7 +120,7 @@ st.sidebar.markdown('''
 # HTML code with an image of the GitHub icon linking to your repository
 github_repo_url = "https://github.com/danieljwilson/"
 github_icon_url = "https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" # This is an example URL; use an appropriate icon URL
-html_code = f'<a href="{github_repo_url}" target="_blank"><img src="{github_icon_url}" alt="GitHub" style="width:40px;height:40px;"></a>'
+html_code = f'<a href="{github_repo_url}" target="_blank"><img src="{github_icon_url}" alt="GitHub" style="width:25px;height:25px;"></a>'
 
 # Display the GitHub icon with a link
 st.sidebar.markdown(html_code, unsafe_allow_html=True)
