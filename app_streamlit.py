@@ -8,7 +8,7 @@ import openai
 import os
 
 #############
-# Load Data #
+# LOAD DATA #
 #############
 
 # Load the DataFrame
@@ -19,25 +19,15 @@ df = pd.read_csv('output/spsp_wEmbeddings.csv')
 loaded_arrays = np.load('output/embeddings_array.npz')
 embeddings_array = loaded_arrays['embeddings_array']
 
-# Function to wrap text based on a character limit
-def wrap_text(text, limit):
-    """
-    Wrap text based on a given character limit.
-    Splits the text into lines with lengths as close to the limit as possible
-    without splitting words.
-    """
-    import textwrap
-    return '<br>'.join(textwrap.wrap(text, width=limit))
-
-#############
-# Functions #
-#############
-# Access the API key from an environment variable
 # openai.api_key = os.getenv('OPENAI_API_KEY') # local testing
 openai.api_key = st.secrets['OPENAI_API_KEY']
 
 from openai import OpenAI
 client = OpenAI()
+
+#############
+# FUNCTIONS #
+#############
 
 # Function to get embeddings
 def get_embedding(text, model="text-embedding-3-small"):
@@ -67,8 +57,18 @@ def search_posters(df, embeddings_array, query_term):
     res = res.sort_values('Similarity', ascending=False)
     return res
 
+# Function to wrap text based on a character limit
+def wrap_text(text, limit):
+    """
+    Wrap text based on a given character limit.
+    Splits the text into lines with lengths as close to the limit as possible
+    without splitting words.
+    """
+    import textwrap
+    return '<br>'.join(textwrap.wrap(text, width=limit))
+
 #############
-# Sidebar   #
+# SIDEBAR   #
 #############
 
 # Adding a title to the sidebar
@@ -118,7 +118,7 @@ st.sidebar.markdown('''
         )
 
 ########
-# Main #
+# MAIN #
 ########
 # Main logic to determine the source of plot_df based on user input
 if query_text:
@@ -162,16 +162,6 @@ else:
     plot_df = None  # Ensure plot_df is defined even if no input is given
 
 if plot_df is not None:        
-    # # Define a mapping from group to size
-    # group_to_size = {'Original': 15,
-    #                  'Similar': 5,
-    #                  'Different': 5,
-    #                  'Random': 5
-    #                  }
-
-    # # Create a new 'size' column in the DataFrame based on the 'group' column
-    # plot_df['size'] = plot_df['group'].map(group_to_size)
-    
     # Define your color mapping for the 'continent' column categories
     color_map = {
         'Original': '#793FDF',
@@ -207,7 +197,6 @@ if plot_df is not None:
 
     # Update hover template for all traces
     fig.update_traces(hovertemplate="<b>%{customdata[0]}</b><br><br>✍️ %{customdata[1]}<br>📅 %{customdata[2]}: %{customdata[3]} - %{customdata[4]}<extra></extra>")
-    # fig.update_traces(marker=dict(size=plot_df['size']))
     
     # Updating axis titles
     fig.update_layout(
@@ -272,5 +261,3 @@ if plot_df is not None:
                 
                 ❓ Please feel free to [email me](mailto:daniel.j.wilson@gmail.com) with any issues, feedback, or questions.
                 '''
-            # st.write(f"**Authors:** {selected_session['Authors']}")
-            # st.write(f"**Date:** {selected_session['*Date']}, **Time:** {selected_session['*Time Start']} - {selected_session['*Time End']}")
