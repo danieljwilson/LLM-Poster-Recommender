@@ -4,6 +4,7 @@ __pycache__/
 
 # Specific files
 agenda_export_spspa_202402 MJ.xls
+.streamlit
 
 # C extensions
 *.so
