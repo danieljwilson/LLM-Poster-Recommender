@@ -84,4 +84,4 @@ To deploy the Streamlit app, you can use services like Streamlit Sharing, Heroku
 Contributions are welcome. Please fork the repository and submit pull requests with your changes.
 
 ## License
-[MIT](https://github.com/danieljwilson/LLM-Poster-Recommender/blob/main/LICENSE).
+[MIT](https://github.com/danieljwilson/LLM-Poster-Recommender/blob/master/LICENSE).
