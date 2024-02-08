@@ -85,3 +85,5 @@ Contributions are welcome. Please fork the repository and submit pull requests w
 
 ## License
 [MIT](https://github.com/danieljwilson/LLM-Poster-Recommender/blob/master/LICENSE).
+
+<a href="https://twitter.com/intent/user?screen_name=_danieljwilson_">![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/danieljwilson)</a>
