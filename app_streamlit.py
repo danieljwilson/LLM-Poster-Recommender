@@ -123,9 +123,9 @@ twitter_profile_url = "https://twitter.com/_danieljwilson_"
 linkedin_profile_url = "https://www.linkedin.com/in/danieljwilson/"
 
 # Social media icon URLs
-github_icon_url = "https://cdn4.iconfinder.com/data/icons/social-media-2231/512/71-github_social-1024.png"
-twitter_icon_url = "https://cdn3.iconfinder.com/data/icons/social-media-black-white-2/512/BW_Twitter_3_glyph_svg-1024.png"
-linkedin_icon_url = "https://www.iconpacks.net/icons/1/free-linkedin-icon-112-thumb.png"
+github_icon_url = "https://cdn4.iconfinder.com/data/icons/social-media-2231/512/71-github_social-512.png"
+twitter_icon_url = "https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Twitter5_svg-1024.png"
+linkedin_icon_url = "https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Linkedin2_svg-1024.png"
 
 # HTML code with social links
 html_code = f'''
@@ -284,16 +284,3 @@ if plot_df is not None:
 
 import streamlit.components.v1 as components
 
-components.html(
-    """
-        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" 
-        data-text="Check my cool Streamlit Web-App🎈" 
-        data-url="https://streamlit.io"
-        data-show-count="false">
-        data-size="Large" 
-        data-hashtags="streamlit,python"
-        Tweet
-        </a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    """
-)
