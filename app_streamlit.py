@@ -123,7 +123,7 @@ twitter_profile_url = "https://twitter.com/_danieljwilson_"
 linkedin_profile_url = "https://www.linkedin.com/in/danieljwilson/"
 
 # Social media icon URLs
-github_icon_url = "https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"
+github_icon_url = "https://cdn4.iconfinder.com/data/icons/social-media-2231/512/71-github_social-1024.png"
 twitter_icon_url = "https://about.twitter.com/content/dam/about-twitter/x/large-x-logo.png.twimg.1920.png"
 linkedin_icon_url = "https://www.iconpacks.net/icons/1/free-linkedin-icon-112-thumb.png"
 
