@@ -124,13 +124,13 @@ linkedin_profile_url = "https://www.linkedin.com/in/danieljwilson/"
 
 # Social media icon URLs
 github_icon_url = "https://cdn4.iconfinder.com/data/icons/social-media-2231/512/71-github_social-1024.png"
-twitter_icon_url = "https://about.twitter.com/content/dam/about-twitter/x/large-x-logo.png.twimg.1920.png"
+twitter_icon_url = "https://cdn3.iconfinder.com/data/icons/social-media-black-white-2/512/BW_Twitter_3_glyph_svg-1024.png"
 linkedin_icon_url = "https://www.iconpacks.net/icons/1/free-linkedin-icon-112-thumb.png"
 
 # HTML code with social links
 html_code = f'''
     <a href="{github_repo_url}" target="_blank"><img src="{github_icon_url}" alt="GitHub" style="width:20px;height:20px;margin-right:5px;"></a>
-    <a href="{twitter_profile_url}" target="_blank"><img src="{twitter_icon_url}" alt="Twitter" style="width:17px;height:17px;margin-right:5px;"></a>
+    <a href="{twitter_profile_url}" target="_blank"><img src="{twitter_icon_url}" alt="Twitter" style="width:20px;height:20px;margin-right:5px;"></a>
     <a href="{linkedin_profile_url}" target="_blank"><img src="{linkedin_icon_url}" alt="Twitter" style="width:20px;height:20px;"></a>
     '''
 
