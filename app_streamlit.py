@@ -281,3 +281,19 @@ if plot_df is not None:
                 
                 ❓ Please feel free to [email me](mailto:daniel.j.wilson@gmail.com) with any issues, feedback, or questions.
                 '''
+
+import streamlit.components.v1 as components
+
+components.html(
+    """
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" 
+        data-text="Check my cool Streamlit Web-App🎈" 
+        data-url="https://streamlit.io"
+        data-show-count="false">
+        data-size="Large" 
+        data-hashtags="streamlit,python"
+        Tweet
+        </a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    """
+)
